@@ -11,13 +11,11 @@ const userSchema = new mongoose.Schema ({
 
 const User = mongoose.model("User" , userSchema);
 
-
-
 app.use(express.static("public"));
 app.use(express.json());
  
 app.get("/" , (req , res) => {
-  res.sendFile(__dirname + "/index.html")
+  console.log(")")
 })
 app.get("/about" , (req , res) => {
   res.sendFile(__dirname + "/about.html")
