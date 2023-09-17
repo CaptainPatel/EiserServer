@@ -18,7 +18,7 @@ app.get("/" , (req , res) => {
   console.log(")")
 })
 app.get("/about" , (req , res) => {
-  res.sendFile(__dirname + "/about.html")
+  console.log("hi")
 })
 
 app.post("/createUser" , async (req ,res) => {
